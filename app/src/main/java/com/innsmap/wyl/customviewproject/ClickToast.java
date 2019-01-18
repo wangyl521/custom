@@ -25,7 +25,7 @@ public class ClickToast {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //这里可以做点击操作
+                    Toast.makeText(context,"我被点击了",Toast.LENGTH_LONG);
                 }
             });
             mToast = Toast.makeText(context.getApplicationContext(), "", duration);
