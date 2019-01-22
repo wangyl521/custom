@@ -8,7 +8,7 @@ import com.innsmap.wyl.customviewproject.adapter.MyAdapter
 import kotlinx.android.synthetic.main.home_layout.*
 
 class HomeActivity : AppCompatActivity() {
-    private val string = arrayOf("viewpager+头部导航", "可点击的Toast", "可以展开的text", "风车","drawable")
+    private val string = arrayOf("viewpager+头部导航", "可点击的Toast", "textView", "风车","drawable","shape、selector")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_layout)
@@ -26,6 +26,7 @@ class HomeActivity : AppCompatActivity() {
                 2 -> startActivity(Intent(this, TextActivity::class.java))
                 3 -> startActivity(Intent(this, LeafLoadingActivity::class.java))
                 4 -> startActivity(Intent(this,DrawableActivity::class.java))
+                5 -> startActivity(Intent(this,BackgroundActivity::class.java))
             }
         }
     }
