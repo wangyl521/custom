@@ -30,7 +30,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile project(':customview')
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.github.bffcorreia:fole:1.0.0'
 }
 repositories {
+    maven { url 'https://jitpack.io' }
     mavenCentral()
 }
