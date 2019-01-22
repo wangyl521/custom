@@ -6,9 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.lang.reflect.Field;
+
 
 public class ClickToast {
 
@@ -25,7 +27,7 @@ public class ClickToast {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(context,"我被点击了",Toast.LENGTH_LONG);
+                    Toast.makeText(context,"我被点击了",Toast.LENGTH_LONG).show();
                 }
             });
             mToast = Toast.makeText(context.getApplicationContext(), "", duration);
